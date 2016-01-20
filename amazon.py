@@ -6,7 +6,7 @@ print('Input your Amazon password')
 userPassword = input()
 
 browser = webdriver.Firefox()
-browser.get('www.amazon.com/sign-in')
+browser.get('https://www.amazon.com/sign-in')
 
 emailElem = browser.find_element_by_id('ap_email')
 emailElem.send_keys (userEmail)
