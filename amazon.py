@@ -8,9 +8,6 @@ userPassword = input()
 browser = webdriver.Firefox()
 browser.get('www.amazon.com/sign-in')
 
-loginElem = browser.find_element_by_id('nav-link-yourAccount')
-loginElem.click()
-
 emailElem = browser.find_element_by_id('ap_email')
 emailElem.send_keys (userEmail)
 
